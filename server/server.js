@@ -9,5 +9,6 @@ app.use(express.json())
 app.use(cors())
 
 app.get('/api/plants', ctrl.getPlantsBack)
+app.post('/api/plants', ctrl.addPlantBack)
 
 app.listen(4000, () => console.log('server running on 4000'))
